@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="br.com.edecio.appcadastrodeveiculos.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Código (para buscas)"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar"
+            android:onClick="buscarVeiculo"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Modelo do Veículo"/>
+
+
+    <EditText
+        android:id="@+id/edtAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ano de Fabricação"/>
+
+    <EditText
+        android:id="@+id/edtPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço de Venda"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incluir"
+        android:onClick="incluirVeiculo"/>
+
+    <Button
+        android:id="@+id/btnAlterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alterar"
+        android:onClick="alterarVeiculo"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:onClick="excluirVeiculo"
+        android:visibility="invisible"/>
+
+</LinearLayout>
